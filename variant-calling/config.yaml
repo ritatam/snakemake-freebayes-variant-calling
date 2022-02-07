@@ -1,0 +1,29 @@
+
+env: "trim"
+SRA: ['SRR10413547', 'SRR10829369']
+
+
+# ================================ INPUT & OUTPUT PATHS ================================ #
+
+trimmed_in: "/g/data/xf3/ht5438/data/Illumina/Pst/Pst_var_hunt/trimmed"
+map_out: "/scratch/xf3/ht5438/Pst_var_hunt/test/bwa_mapped"
+merged_out: "/scratch/xf3/ht5438/Pst_var_hunt/test/merged_bam"
+vcf_out: "/scratch/xf3/ht5438/Pst_var_hunt/test/vcf"
+
+
+
+# ================================ REFERENCE GENOME SETTINGS ================================ #
+
+bwa_ref_fa: "/g/data/xf3/ht5438/data/genome/Pst104E/Pst_104E_v13_ph_ctg.fa"
+bwa_ref_name: "PST104E_Yr43"
+
+
+
+# ================================ THREADS ================================ #
+bwa_mapT : "12"
+bwa_sortT : "4"
+bwa_indexT : "16"
+sam_statT: "16"
+sam_mergeT: "16"
+sam_indexT: "16"
+freebayesT: "48"

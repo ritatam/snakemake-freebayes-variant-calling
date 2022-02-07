@@ -1,0 +1,36 @@
+__default__:
+    mem: 12G
+    queue: normal
+    time: "01:00:00"
+    jobfs: 1G
+    project: xf3
+    name: "{rule}" 
+    threads: 1
+
+bwamem2_map:
+    mem: 24G
+    time: "05:00:00"
+    threads: 16
+    
+picard_remove_duplicates:
+    mem: 50G
+    time: "05:00:00"
+
+samtools_merge:
+    mem: 130G
+    time: "05:00:00"
+    threads: 16
+
+samtools_merge_index:
+    mem: 10G
+    time: "02:00:00"
+    threads: 16
+
+samtools_faidx:
+    mem: 4G
+
+freebayes_parallel:
+    mem: 125G
+    time: "24:00:00"
+    threads: 48
+    
